@@ -12,8 +12,9 @@ router.post('/randomize', (req, res, next) => {
     res.json(data)
 })
 
-router.get('/clear', (req, res, next) => {
+router.delete('/clear', (req, res, next) => {
     data = {}
+    
     res.json(data)
 })
 
