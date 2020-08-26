@@ -8,7 +8,7 @@ router.get('/get-data', (req, res, next) => {
 
 router.post('/randomize', (req, res, next) => {
     const result = Math.round(100 * Math.random()).toString(10)
-    data = { ...data, [req.body.name]: result}
+    data = { ...data, [req.headers.name]: result}
     res.json(data)
 })
 
